@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WebscrapperNetshoesApplication<webscrapper_netshoes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.netshoes.api.WebscrapperNetshoesApplication",
+            "projectName": "webscrapper_netshoes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
