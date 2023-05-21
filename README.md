@@ -24,7 +24,7 @@ A pasta `back-end-api` contém o código-fonte do back-end, enquanto a pasta `fr
     ```powershell
     2023-05-20T22:59:18.564-03:00  INFO 13076 --- [  restartedMain] c.n.api.WebscrapperNetshoesApplication   : SERVIDOR INICIADO
     ```
-3. Acesse a pasta front-end e abra o arquivo X
+3. Acesse a pasta front-end e abra o arquivo `produto.html`
 4. Para parar a aplicação: `CRTL + C`, depois `s` e `enter`
    
 ## Realizando requisições
