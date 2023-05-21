@@ -78,7 +78,7 @@ function send(event){
     unrenderError();
 
     let ref = event.target.value.trim();
-    if (ref === '') {return;}
+    if (!ref.length > 0) {return;}
 
     clearTimeout(delayTimer);
     delayTimer = setTimeout( () =>{
