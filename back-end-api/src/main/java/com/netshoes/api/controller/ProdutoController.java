@@ -3,6 +3,7 @@ package com.netshoes.api.controller;
 import java.io.IOException;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/produto")
+@CrossOrigin(origins = "*")
 public class ProdutoController {
 
     private ProdutoService service;
