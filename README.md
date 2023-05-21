@@ -41,7 +41,7 @@ https://localhost:8080/api/produto/39W-3127-026-39
 ```
 ou passando o nome do produto junto com o código
 ```bash
-tenis-under-armour-basquete-spawn-3-masculino-cinza+amarelo-39W-3127-132
+https://localhost:8080/api/produto/tenis-under-armour-basquete-spawn-3-masculino-cinza+amarelo-39W-3127-132
 ```
 
 o resultado é o mesmo
