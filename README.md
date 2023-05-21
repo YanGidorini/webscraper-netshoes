@@ -25,6 +25,7 @@ A pasta `back-end-api` contém o código-fonte do back-end, enquanto a pasta `fr
     2023-05-20T22:59:18.564-03:00  INFO 13076 --- [  restartedMain] c.n.api.WebscrapperNetshoesApplication   : SERVIDOR INICIADO
     ```
 3. Acesse a pasta front-end e abra o arquivo X
+4. Para parar a aplicação: `CRTL + C`, depois `s` e `enter`
    
 ## Realizando requisições
 Caso queira utilizar a API, segue as instruções para uso:
@@ -35,13 +36,15 @@ Caso queira utilizar a API, segue as instruções para uso:
      1. Somente o código. Ex.: 2I3-2126-006-03
      2. Nome do produto seguido do código. Ex.: agasalho-puma-poly-suit-cl-masculino-preto-2I3-2126-006
 ### Exemplo de requisição
+***Observação:*** note que estou utilizando HTTP. Se tentar usar HTTPS para as requisições, obterá um erro
+
 Passando o código
 ```bash
-https://localhost:8080/api/produto/39W-3127-026-39
+http://localhost:8080/api/produto/39W-3127-026-39
 ```
 ou passando o nome do produto junto com o código
 ```bash
-https://localhost:8080/api/produto/tenis-under-armour-basquete-spawn-3-masculino-cinza+amarelo-39W-3127-132
+http://localhost:8080/api/produto/tenis-under-armour-basquete-spawn-3-masculino-cinza+amarelo-39W-3127-132
 ```
 
 o resultado é o mesmo
