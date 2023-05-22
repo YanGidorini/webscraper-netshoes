@@ -1,4 +1,4 @@
-package com.netshoes.api.domain.service.webScrapping;
+package com.netshoes.api.domain.service.webScraping;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -14,7 +14,7 @@ import com.netshoes.api.domain.model.Produto;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-public class WebScrapper {
+public class WebScraper {
     
     private static final String NETSHOES_BASE_URL = "https://www.netshoes.com.br/";
 
