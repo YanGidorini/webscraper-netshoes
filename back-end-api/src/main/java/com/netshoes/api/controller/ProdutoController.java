@@ -25,7 +25,7 @@ public class ProdutoController {
     @GetMapping("{ref}")
     public ResponseEntity<Produto> buscar(@PathVariable String ref) throws IOException {
         Produto produto = service.buscar(ref);
-        
+
         if (produto != null) {
             return ResponseEntity.ok(produto);
         }

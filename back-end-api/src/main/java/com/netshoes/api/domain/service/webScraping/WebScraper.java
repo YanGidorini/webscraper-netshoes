@@ -8,12 +8,14 @@ import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.Connection.Response;
 import org.jsoup.nodes.Document;
+import org.springframework.stereotype.Component;
 
 import com.netshoes.api.domain.model.Produto;
 
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
+@Component 
 public class WebScraper {
     
     private static final String NETSHOES_BASE_URL = "https://www.netshoes.com.br/";
@@ -30,14 +32,14 @@ public class WebScraper {
         
         String titulo = doc.select("[data-productname]").text();
         String precoString = doc.select("#hiddenPriceSaleInCents").attr("value");
-        BigDecimal preco = stringToPrice(precoString);
+        BigDecimal preco = this.toPrice(precoString);
         String urlImagem = doc.select(".photo-figure > .zoom").attr("src");
         String descricao = doc.select("#features > [itemprop=description]").text();
 
         return new Produto(titulo, preco, urlImagem, descricao);
     }
 
-    private BigDecimal stringToPrice(String s){
+    private BigDecimal toPrice(String s){
         Double d = Double.parseDouble(s) / 100;
         return BigDecimal.valueOf(d);
     }
